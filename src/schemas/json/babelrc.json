@@ -94,17 +94,21 @@
 			"type": "array",
 			"items": {
 				"type": ["string", "array"],
-	        "items": {
-            "description": "the plugin name in .[0] and the options object in .[1]",
-		        "type": [ "string", "object" ]
-	        }
+	      "items": {
+          "description": "the plugin name in .[0] and the options object in .[1]",
+		      "type": [ "string", "object" ]
+	      }
 			}
 		},
 		"presets": {
 			"description": "List of presets (a set of plugins) to load and use",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"type": ["string", "array"],
+        "items": {
+          "description": "the preset name in .[0] and the options object in .[1]",
+		      "type": [ "string", "object" ]
+	      }
 			}
 		},
 		"retainLines": {
